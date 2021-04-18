@@ -15,6 +15,7 @@ import os
 
 video = "test.mkv" # specify path to video
 mongoConnectionStr = #enter your mongodb connection string here
+hostName = "Your Name"
 
 ### input data END ###
 
@@ -73,13 +74,13 @@ print('''
 {} loaded...
 '''.format(video))
 
-hostStats = getHostData("Yeslin Sequeira")
+hostStats = getHostData(hostName)
 goTo = getGoTo(hostStats)
 mediaPlayer.play()
 mediaPlayer.set_time(goTo)
 
 while True:
-    hostStats = getHostData("Yeslin Sequeira")
+    hostStats = getHostData(hostName)
     
     syncToHost(hostStats)
     
