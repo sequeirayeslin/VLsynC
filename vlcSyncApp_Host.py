@@ -48,14 +48,14 @@ def getCmd(cmdFile):
     return cmd
 
 def runCmd(cmd):
-    if resp == 'play':
+    if cmd == 'play':
         mediaPlayer.play()
         print('\n\ncmd: play\n')
-    elif resp == 'pause':
+    elif cmd == 'pause':
         mediaPlayer.pause()
         print('\n\ncmd: pause\n')
-    elif resp[0:4] == 'goto':
-        goto = resp[5:].split(':')
+    elif cmd[0:4] == 'goto':
+        goto = cmd[5:].split(':')
         goto = ( int(goto[0])*60 + int(goto[1]) ) * 1000
         mediaPlayer.set_time(goto)
         print('\n\ncmd: goto\n')
