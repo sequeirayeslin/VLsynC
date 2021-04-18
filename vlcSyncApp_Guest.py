@@ -70,8 +70,8 @@ def syncToHost(hostStats):
 ### functions END ###
 
 print('''
-Video loaded...
-''')
+{} loaded...
+'''.format(video))
 
 hostStats = getHostData("Yeslin Sequeira")
 goTo = getGoTo(hostStats)
