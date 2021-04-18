@@ -21,6 +21,7 @@ import os
 
 video = "test.mkv" # specify path to video
 mongoConnectionStr = #enter your mongodb connection string here
+hostName = "Your Name"
 
 ### input data END ###
 
@@ -64,7 +65,7 @@ def getClkTime():
     return time.strftime("%H:%M:%S", time.localtime())
 
 def updateMongo(playerTime, clockTime, playerState):
-    db.partyHostData.update_one({"hostName":"Yeslin Sequeira"}, {"$set":{"playerTime": playerTime, "clockTime": clockTime, "state":playerState}})
+    db.partyHostData.update_one({"hostName":hostName}, {"$set":{"playerTime": playerTime, "clockTime": clockTime, "state":playerState}})
 
 def printCurPos():
     currentPos = mediaPlayer.get_time()/1000
