@@ -37,8 +37,8 @@ sg.theme('mytheme')
 
 ### input data ###
 
-mongoConnectionStr = "mongodb+srv://m001-student:m001-mongodb-basics@sandbox.8dtmz.mongodb.net/video?retryWrites=true&w=majority"
-hostName = "Yeslin Sequeira"
+mongoConnectionStr = #enter your mongodb connection string
+hostName = #enter your name
 
 ### input data END ###
 
