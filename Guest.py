@@ -38,7 +38,7 @@ sg.theme('mytheme')
 ### input data ###
 
 mongoConnectionStr = #enter your mongodb connection string
-hostName = #enter your name
+hostName = #enter hosts name
 
 ### input data END ###
 
