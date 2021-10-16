@@ -1,14 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[6]:
-
-
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
 try:
     import vlc
     vlc.MediaPlayer() #test
